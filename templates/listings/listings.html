@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 
-   {% load humanize %}
+{% load humanize %}
 
 {% block title %} | Browse Property Listings {% endblock %}
 
@@ -52,8 +52,8 @@
                       <i class="fas fa-map-marker text-secondary"></i> {{ listing.city }} {{ listing.location }}</p>
                   </div>
                   <hr>
-                  
-                  <a href="{% url 'listing' listing.id %}" class="btn btn-primary btn-block">More Info</a>
+                  <a href="{% url 'listing' listing.id %}">info</a>
+                 
                 </div>
               </div>
             </div>
